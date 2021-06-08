@@ -4,6 +4,7 @@ using Xunit;
 
 namespace SpecificationBasedTesting
 {
+
     /// <summary>
     /// * É par e é primo.
     /// * É par e não é primo.
