@@ -5,6 +5,7 @@ using Xunit;
 
 namespace SpecificationBasedTesting
 {
+
     /// <summary>
     /// 1 - Parametros:tempo gasto (int), velocidadeMedia (int)
     /// 2 - 
