@@ -2,6 +2,9 @@
 
 namespace SourceCode.URICode
 {
+    /// <summary>
+    /// Fonte: https://www.urionlinejudge.com.br/judge/pt/problems/view/1020
+    /// </summary>
     public class IdadeEmDias
     {
         public int Dias { get; }
