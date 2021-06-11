@@ -19,6 +19,18 @@ namespace SourceCode.URICode
             Validar();
         }
 
+        public int Calcular()
+        {
+            var result = HorarioDeSaida + TempoDeViagem + FusoHorarioDestino;
+            if (result > 23)
+                return result -= 24;
+
+            if (result < 0)
+                return result += 24;
+
+            return result;
+        }
+
         private void Validar()
         {
             if (HorarioDeSaida is (< 0 or > 23)
