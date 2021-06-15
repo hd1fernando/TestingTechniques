@@ -1,7 +1,6 @@
-﻿using System;
-
-namespace SourceCode
+﻿namespace SourceCode
 {
+
     public struct Number
     {
         public int Num;
