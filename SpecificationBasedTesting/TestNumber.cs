@@ -16,6 +16,7 @@ namespace SpecificationBasedTesting
     {
 
         [Fact(DisplayName = "É par e é primo")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test1()
         {
             Number num = 2;
@@ -26,6 +27,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "É par e não é primo")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test2()
         {
             Number num = 42;
@@ -36,6 +38,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "É impar e é primo")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test3()
         {
             Number num = 97;
@@ -46,6 +49,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "É impar e não é primo")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test4()
         {
             Number num = 77;
@@ -56,6 +60,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "É um valor inválido")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test5()
         {
             Number num = -42;
@@ -69,6 +74,7 @@ namespace SpecificationBasedTesting
         [InlineData(42)]
         [InlineData(-42)]
         [InlineData(77)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Is_not_a_prime_number(int number)
         {
             Number num = number;
@@ -81,6 +87,7 @@ namespace SpecificationBasedTesting
         [Theory(DisplayName = "É um número primo")]
         [InlineData(2)]
         [InlineData(97)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Is_a_prime_number(int number)
         {
             Number num = number;

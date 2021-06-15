@@ -18,6 +18,7 @@ namespace SpecificationBasedTesting
     public class IdadeEmDiasTest
     {
         [Fact(DisplayName = "Executa com sucesso quando dia é maior do que zero")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test1()
         {
             var idade = new IdadeEmDias(400);
@@ -28,6 +29,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "Retorna zero quando o dia é igual a zero")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test2()
         {
             var idade = new IdadeEmDias(0);
@@ -38,6 +40,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "Levanta um erro quando o dia é menor do que zero")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test3()
         {
             var idade = new IdadeEmDias(-42);

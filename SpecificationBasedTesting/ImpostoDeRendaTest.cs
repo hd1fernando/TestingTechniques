@@ -33,6 +33,7 @@ namespace SpecificationBasedTesting
 
     {
         [Fact(DisplayName = "Calcula 18% quando salário está acima de 3000")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test1()
         {
             var imposto = new ImpostoDeRenda(3002);
@@ -43,6 +44,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "Calcula 28% quando salário está acima de 4500")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test2()
         {
             var imposto = new ImpostoDeRenda(4520.00m);
@@ -53,6 +55,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "Retorna isento quando salário está abaixo de 2000")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test3()
         {
             var imposto = new ImpostoDeRenda(1701.12m);
@@ -63,6 +66,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "Levanta uma exceção quando salário é menor do que zero")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test4()
         {
             var imposto = new ImpostoDeRenda(-1);

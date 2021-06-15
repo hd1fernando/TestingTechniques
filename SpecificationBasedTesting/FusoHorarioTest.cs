@@ -39,6 +39,7 @@ namespace SpecificationBasedTesting
         [InlineData(1, 13, 1)]
         [InlineData(1, 1, -10)]
         [InlineData(1, 1, 10)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test1(int horararioDeSaida, int tempoDeViagem, int fusoHorarioDestino)
         {
             Action fuso = () => new FusoHorario(horararioDeSaida, tempoDeViagem, fusoHorarioDestino);
@@ -53,6 +54,7 @@ namespace SpecificationBasedTesting
         [InlineData(0, 7, 0, 7)]
         [InlineData(10, 7, 3, 20)]
         [InlineData(0, 7, 3, 10)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test2(int horararioDeSaida, int tempoDeViagem, int fusoHorarioDestino, int resultadoEsperado)
         {
             var fuso = new FusoHorario(horararioDeSaida, tempoDeViagem, fusoHorarioDestino);

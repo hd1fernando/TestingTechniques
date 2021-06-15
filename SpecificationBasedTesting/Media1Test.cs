@@ -42,6 +42,7 @@ namespace SpecificationBasedTesting
         [InlineData(7.1, 5.0, 5.66818)] // a > b
         [InlineData(5.0, 7.1, 6.43182)] // a < b
         [InlineData(5.0, 5.0,5.0)]// a = b
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test(double a, double b, double resultadoEsperado)
         {
             var media = new Media1(a, b);
@@ -54,6 +55,7 @@ namespace SpecificationBasedTesting
         [Theory(DisplayName = "Executa com sucesso quando A ou B possuem valores  nulos e entre 0.0 e 10.0")]
         [InlineData(0.0, 5.0, 3.40909)] // a > b
         [InlineData(5.0, 0.0, 1.59091)] // a < b
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test3(double a, double b, double resultadoEsperado)
         {
             var media = new Media1(a, b);
@@ -68,6 +70,7 @@ namespace SpecificationBasedTesting
         [InlineData(11.0, 4.2)]
         [InlineData(1.0, -4.2)]
         [InlineData(1.0, 42.0)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test2(double a, double b)
         {
             var media = new Media1(a, b);

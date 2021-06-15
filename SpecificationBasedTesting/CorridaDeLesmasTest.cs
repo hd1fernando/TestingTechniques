@@ -38,6 +38,7 @@ namespace SpecificationBasedTesting
         [InlineData(1, Nivel.Um, 2)]
         [InlineData(1, Nivel.Dois, 10)]
         [InlineData(1, Nivel.Tres, 25)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test1(int numLesmas, Nivel resultadoExperado, params int[] velocidades)
         {
 
@@ -52,6 +53,7 @@ namespace SpecificationBasedTesting
         [InlineData(-1, 9, 9, 1, 1, 5, 3, 2, 4, 1, 3)]
         [InlineData(1, -9)]
         [InlineData(1)]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test2(int numLesmas, params int[] velocidades)
         {
             var corrida = new CorridaDeLesmas(numLesmas, velocidades);

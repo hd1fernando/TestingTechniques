@@ -21,6 +21,7 @@ namespace SpecificationBasedTesting
         [InlineData(1, 2, 3, -10, 2, 7)]
         [InlineData(1, 2, 3, 10, -2, 7)]
         [InlineData(1, 2, 3, 10, 2, -7)]
+        [Trait("Unit Test","Specification Based Testing")]
         public void Test2(int humanos, int elfos, int anoes, int orcs, int wargs, int aguias)
         {
             Action action = () => new ABatalhaDosCincoExercitos(humanos, elfos, anoes, orcs, wargs, aguias);
@@ -30,6 +31,7 @@ namespace SpecificationBasedTesting
 
 
         [Fact(DisplayName = "Quando número de exercitos do bem é maior, BemVence deve retornar true")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test()
         {
             var batalha = new ABatalhaDosCincoExercitos(1, 2, 3, 10, 2, 7);
@@ -40,6 +42,7 @@ namespace SpecificationBasedTesting
         }
 
         [Fact(DisplayName = "Quando número de exercitos do bem é menor, BemVence deve retornar false")]
+        [Trait("Unit Test", "Specification Based Testing")]
         public void Test3()
         {
             var batalha = new ABatalhaDosCincoExercitos(1, 2, 3, 10, 2, 5);
