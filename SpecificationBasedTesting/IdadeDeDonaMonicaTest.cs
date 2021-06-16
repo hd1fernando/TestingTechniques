@@ -78,7 +78,7 @@ namespace SpecificationBasedTesting
 
         [Theory(DisplayName = "Deve executar validações corretas quando valores estão dentro do limite esperado")]
         [InlineData(52, 14, 18, 20)]
-        [InlineData(47, 21, 9, 21)]
+        [InlineData(47, 21, 9, 17)]
         [Trait("Unit Test", "Specification Based Testing")]
         public void Test2(int monica, int filhoA, int filhoB, int resultadoEsperado)
         {
