@@ -36,7 +36,7 @@ namespace SourceCode.URICode
                 if (temp > resultado)
                     resultado = temp;
             }
-            
+
             if (resultado == 0)
                 throw new InvalidOperationException();
 
@@ -60,7 +60,8 @@ namespace SourceCode.URICode
 
         private void ValidarNumeroDeLesmas()
         {
-            if (NumeroDeLesmas is (< 1 or > 500))
+            if (NumeroDeLesmas is (< 1 or > 500)
+                || NumeroDeLesmas != VelocidadesDasLesmas.Length)
                 throw new InvalidOperationException();
         }
     }
