@@ -73,7 +73,7 @@ namespace SpecificationBasedTesting
 
             Action result = () => imposto.Calcular();
 
-            result.Should().Throw<ArgumentException>();
+            result.Should().Throw<InvalidOperationException>();
         }
     }
 }
