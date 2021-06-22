@@ -7,7 +7,8 @@ using Xunit;
 
 namespace PropertyBasedTesting
 {
-    public class UnitTest1
+
+    public class ImpostoDeRendaTest
     {
         [Property(MaxTest = 100, Arbitrary = new[] { typeof(NumberGenerator) })]
         [Trait("Unit Test", "Property Based Testing")]
